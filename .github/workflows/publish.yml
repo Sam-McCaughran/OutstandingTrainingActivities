@@ -34,6 +34,7 @@ jobs:
           # Provide ONE of these as repo secrets:
           TODOIST_PROJECT_ID: ${{ secrets.TODOIST_PROJECT_ID }}
           TODOIST_PROJECT_NAME: ${{ secrets.TODOIST_PROJECT_NAME }}
+          EXCLUDE_PRIORITIES: ${{secrets.EXCLUDE_PRIORITIES}}
         run: python scripts/build.py
 
       - name: Upload artifact
