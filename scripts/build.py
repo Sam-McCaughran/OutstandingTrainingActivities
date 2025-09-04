@@ -21,6 +21,8 @@ except Exception:
 TOKEN = (os.getenv("TODOIST_TOKEN") or "").strip()
 PROJECT_ID = (os.getenv("TODOIST_PROJECT_ID") or "").strip()
 PROJECT_NAME = (os.getenv("TODOIST_PROJECT_NAME") or "").strip()
+PRIORITY_EXCLUDE = (os.getenv("EXCLUDE_PRIORITIES") or "").strip()
+
 
 if not TOKEN:
     print("ERROR: Missing TODOIST_TOKEN environment variable.", file=sys.stderr)
